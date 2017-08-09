@@ -1,0 +1,38 @@
+body{
+	background: #e4e4e4
+}
+.jumbotron{
+	background: url(../img/purpalt.png)  repeat;
+	padding: l00px l5px 60px;
+	color: #031203;
+}
+.text-muted{
+	color: #09061f;
+	font-weight : 200;
+}
+
+.container marketing{
+background: #fea5d5 url(../img/skyline.png) repeat-x bottom;
+padding: 40px 0 140px 0;
+}
+
+.info small{
+color: #df0;
+}
+.info a{
+color: #fff;
+}
+.info a:hover{
+color: #ff3;
+}
+.tab-pane{
+padding: 10px 0 0 l0px;
+}
+
+
+.ftr address, .ftr a, .ftr p{
+	color: #ff0000;
+}
+.ft_space{
+padding: 0 0px;
+}

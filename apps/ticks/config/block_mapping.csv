@@ -1,0 +1,23 @@
+Owner,Function,Product
+IO,BB,/Intel_OmniPath/QLogic_Fibre_Channel_Switches/Mellanox_Switches/Brocade_Switches/Intel_RAID/Solarflare/TapeDrives/USB Flash/SD_Card/SSD/ODD/NVMe/PHY/GPU/CoProcessor/PMC_RAID/PMC_SAS_HBA/Brocade_Adapters/HDD/LSI/Broadcom/Emulex_Ethernet/Intel_Network/Memory/Qlogic_Ethernet/Avago_RAID/Avago_SAS_HBA/Emulex_FC/Mellanox_Adapters/Qlogic_FC/SAS_RAID/z_Pegatron_HW/Brocade/Fusionio/LSI_RAID/LSI_SAS_HBA//Intel AEP/LSI_PCIe_Switch/Marvell_RAID/STORAGE_CONTROLLER_PE/
+Xclarity ,XCl,/XClarity Administrator/DSA/XClarity_Energy_Manager/
+xFW,UEFI,/UEFI_BLUE/UEFI2/uEFI/UEFI3/UEFI3_BLUE/UEFI4/Z_AMI/
+xFW,IMM,/z_Avocent_SW/IMM2/Avocent_SW_BLUE/IMM2_BLUE/IMM2_HW/IMM3/z_Emerson_SW/iBMC/
+xFW,UNKNOWN,/z_IEC_FW/z_Wistron_FW/z_Wistron_SW/z_Compal_FW/z_Pegatron_SW/
+2sCntr,OneCli&Tools,/OneCli/UxLite/ToolsCenter/
+CMM / AMM ,CMM / AMM ,/CMM/AMM/CMM_BLUE/
+Think BIOS,BIOS,/BIOS/
+Think BMC,BMC,/TMM/EMS/TSM/
+BDC HW,EE,/CPU/Audio/Chipsets/Internal_Cables/OB_Video/PCBs/USB/SystemX_HW/Xinyi/FPGA//Parallel_Port/Serial_Port/TPM_TCM/
+BDC HW,Power,/System_Power/
+BDC SW,Application,/EasyStartup/EasyUpdate/Power Planner/vCenter/SCCM/SCOM/TSMCLI/OSPUT/TCM_DSS/Capacity_Planner/PMTSL/EmbeddedHypervisors/OSS_Application/
+BDC SW,Embed&Diag,/DiagnosticTool/TDM/TDM_Diag/
+BDC Thermal,Thermal,/Thermal/
+BDC ME,ME/S&V,/Packaging/Compliance/Mechanical/SV/
+BDC Platform,Others,/note: other product/system_spec/OperatingSystem/Director_Triage/Specification/UserManual/System_grantley 4R1T/Qtester/
+TDC Platform,UEFI_Platform,/ISDEV/z_IEC_HW/z_Compal_HW/z_Wistron_HW/z_Pag_HW/Kent_FW(UEFI/IMM)
+OS,OS,/Windows/Citrix/RHEL/VMWare/Novell SUSE/Oracle Linux/Ubuntu/NeoKylin/VSAN/
+Storage,Storage,/Lenovo Entry SAN/
+UXSP,UXSP,/UxSP_Master/UxSP_Master_BLUE/
+RDC,RDC,/Draco/
+Networking,Networking,/Skeeter/

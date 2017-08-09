@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<!--
+	<script src="//cdnjs.cloudflare.com/ajax/libs/nanobar/0.2.1/nanobar.min.js"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='/svg/overall.svg') }}" >  
+	 onclick="location.href='<%=site_adres2 & urun_adres%>'"
+	class='clickable-row'
+<script  type="text/javascript" src= "{{ url_for('static', filename='js/main.js') }}" ></script>
+    "https://bz.labs.lenovo.com/report.cgi?query=bug_severity%3DEmergency%26bug_severity%3DHigh%26bug_severity%3DMedium%26bug_severity%3DLow%26bug_status%3DOpen%26bug_status%3DWorking%26bug_status%3DRejected%26bug_status%3DFixed%26classification%3DFirmware%26priority%3D---%26priority%3D4%26priority%3D3%26priority%3D2%26priority%3D1%26product%3Dz_Avocent_SW%26rep_platform%3DAll%26rep_platform%3Dx3250%2520M6%2520%2528MiaoLi%2529%26rep_platform%3Dx3500%2520M5%2520%2528YuanShan%2529%26rep_platform%3Dx3550%2520M5%2520%2528DaAn%2529%26rep_platform%3Dx3650%2520M5%2520%2528XinYi%2529%26rep_platform%3DOther%26resolution%3D---%26resolution%3DSelect%2520a%2520Resolution%26resolution%3DUnreproducible%26resolution%3DUser%2520Error%26resolution%3DWorking%2520as%2520Designed%26resolution%3DTool%2520Issue%26resolution%3DNew%2520Requirement%26resolution%3DHardware%2520Fault%26resolution%3DDUPLICATE%26resolution%3DFIXED%26resolution%3DLimitation%26resolution%3DDelay%2520Verify%26version%3D17B_Block%26x_axis_field%3Dbug_status%26y_axis_field%3Dcf_risk_level%26z_axis_field%3Dproduct%26format%3Dtable%26action%3Dwrap&action=add&token=1499157070-3f_eYZr1UZjEyUZw-bTIUmWSp8lB5kYEUxdGId7IMYU&name=IMM2+Non+purley+Vertiv-SDC"
+			 
+	<a href="https://bz.labs.lenovo.com/report.cgi?query=bug_severity%3DEmergency%26bug_severity%3DHigh%26bug_severity%3DMedium%26bug_severity%3DLow%26bug_status%3DOpen%26bug_status%3DWorking%26bug_status%3DRejected%26bug_status%3DFixed%26classification%3DFirmware%26priority%3D---%26priority%3D4%26priority%3D3%26priority%3D2%26priority%3D1%26product%3Dz_Avocent_SW%26rep_platform%3DAll%26rep_platform%3Dx3250%2520M6%2520%2528MiaoLi%2529%26rep_platform%3Dx3500%2520M5%2520%2528YuanShan%2529%26rep_platform%3Dx3550%2520M5%2520%2528DaAn%2529%26rep_platform%3Dx3650%2520M5%2520%2528XinYi%2529%26rep_platform%3DOther%26resolution%3D---%26resolution%3DSelect%2520a%2520Resolution%26resolution%3DUnreproducible%26resolution%3DUser%2520Error%26resolution%3DWorking%2520as%2520Designed%26resolution%3DTool%2520Issue%26resolution%3DNew%2520Requirement%26resolution%3DHardware%2520Fault%26resolution%3DDUPLICATE%26resolution%3DFIXED%26resolution%3DLimitation%26resolution%3DDelay%2520Verify%26version%3D17B_Block%26x_axis_field%3Dbug_status%26y_axis_field%3Dcf_risk_level%26z_axis_field%3Dproduct%26format%3Dtable%26action%3Dwrap&action=add&token=1499157070-3f_eYZr1UZjEyUZw-bTIUmWSp8lB5kYEUxdGId7IMYU&name=IMM2+Non+purley+Vertiv-SDC"  class="thumbnail" >
+		</a>
+							 <a href="#"></a>
+	-->
+
+<script type="text/javascript" src= "{{ url_for('static', filename='js/test.js') }}">	</script>
+<a class="btn btn-primary btn-lg" id="catch" href="#" role="button" >Loading &raquo;</a>
+
+<div class="row bs-wizard" style="border-bottom:0;">
+		<h2>01. Overall status and Trend </h2>	
+			
+		<table  data-toolbar="#toolbar"  data-show-toggle="true" 	data-show-columns="true" data-show-export="true" data-show-pagination-switch="true" data-pagination="true" data-id-field="id" data-page-list="[10, 25, 50, 100, ALL]" data-show-footer="false" data-side-pagination="server"  
+	data-minimum-count-columns="23" data-id-field="id" data-page-list="[ 25, 50, 100, ALL]" data-show-footer="false" data-side-pagination="server"
+ class="table table-hover" id="pv_Statistics" width="65%" cellspacing="1"  cellpadding="2"  font-size = "6px" >
+    <thead font-size = "8px">
+    <tr >
+		<th data-field="Owner" nowrap="yes"  width="20px" data-formatter="setCode" >Owner</th>
+		<th data-field="Function"   width="20px" >Function</th>
+		<th data-field="All" nowrap="yes"  width="20px" >All</th>
+		<th data-field="Closed" nowrap="yes"  width="10px" data-visible="false">Closed</th>
+		<th data-field="Rejected" nowrap="yes"  width="10px">Rejected</th>
+		<th data-field="Verify" nowrap="yes"  width="10px">Verify</th>
+		<th data-field="Limitation" nowrap="yes"  width="10px">Limitation</th>
+		<th data-field="Fixed" nowrap="yes"  width="10px">Fixed</th>
+		<th data-field="Open" nowrap="yes"  width="10px">Open</th>
+		<th data-field="Working" nowrap="yes"  width="10px">Working</th>
+		<th data-field="LmtCandidate" nowrap="yes"  width="10px">LmtCandidate</th>
+    </tr>
+    </thead>
+	<tbody  font-size = "7px" ></tbody>
+	</table>
+</div>
+	<br>	
+	<br>	
+	<br>	
+	<br>	
+	    <div class= "col-xs-10 col-lg-6" >
+        	
+		<div class= "col-xs-8 col-lg-6" > 
+			 <iframe src="http://10.103.63.75/project?name=block"
+			 class="thumbnail" >
+			</iframe>
+	</div>
+		</div>	
+    
+	    <div class= "col-xs-10 col-lg-6" >
+        	
+		<div class= "col-xs-8 col-lg-6" > 
+
+			 <iframe src="https://bz.labs.lenovo.com/buglist.cgi?cmdtype=dorem&list_id=2671885&namedcmd=17A%20CMM%20Red&remaction=run&sharer_id=1830"
+			  >
+			
+			</iframe>
+
+	</div>
+		</div>	   
+
+	    <div class= "col-xs-10 col-lg-6" >
+        	
+		<div class= "col-xs-8 col-lg-6" > 
+
+			 <iframe src="http://bz.labs.lenovo.com/"
+			  >
+			
+			</iframe>
+					
+			 <iframe src="https://github.com/" >
+			
+			</iframe>
+
+	</div>
+	</div>
+		</div >
+        	
+
+ 
+	
+
+	
+	<div class="col-sm-12 col-bg-12  tabble">	
+	<table class="table table-condensed" id="pv_test">
+    <thead>
+    <tr>
+		<th data-field="Bug ID"   data-formatter="setCode" >Bug ID</th>
+		<th data-field="Product">Product</th>
+		<th data-field="Hardware">Hardware</th>
+		<th data-field="Severity">Severity</th>
+		<th data-field="Function">Function</th>
+		<th data-field="Owner">Owner</th>
+		<th data-field="Statistics">Statistics</th>
+	</tr>
+<!--
+		<th data-field="Project">Project</th>
+		<th data-field="Owner">Owner</th>
+		<th data-field="Function">Function</th>
+	{% if name == 'block' %}
+	<th data-field="Sev1N2MS">Sev1N2MS</th>
+	<th data-field="Sev3N4MS">Sev3N4MS</th>
+	<th data-field="Statistics">Statistics</th>
+	<th data-field="OverAge">OverAge</th>
+	<th data-field="TestBlocker">TestBlocker</th>
+	<th data-field="Milestones">Milestones</th>
+	{% endif %}
+-->
+
+
+
+
+
+
+
+    </thead>
+	</table>
+	</div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Sources</h2>
+		  {#
+		   {%for each in  source_list %}
+		   <li>
+				<a href="{{ url_for('static', filename='downloads/'+ each) }}">{{ each }}</a>
+		  {% endfor %}
+		  
+		  #}
+		  </li>
+		<p><a class="btn btn-default" href="#" role="button">Nil &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Summarys</h2>
+          <p>so... </p>
+          <p><a class="btn btn-default" href="#" role="button">Nil &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Chart</h2>
+          <p>stacked chart..</p>
+          <p><a class="btn btn-default" href="#" role="button">Nil &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+	
+{% endblock  %}

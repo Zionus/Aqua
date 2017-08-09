@@ -1,0 +1,295 @@
+{% extends 'base.html' %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/nanobar/0.2.1/nanobar.min.js"></script>
+	
+{% block   footer %}
+	<script  type="text/javascript" src= "{{ url_for('static', filename='js/main.js') }}" ></script>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<!--
+	<link rel="stylesheet" href="{{ url_for('static', filename='/svg/overall.svg') }}" >  
+    -->
+	
+      <div class="info" >
+        <h1> project {{ name }}:</h1>
+        <p>
+		<ul class="nav nav-pills nav-justified"><h2>This summary contains the following tables:</h2>
+		  <li role="presentation" class="active"><a href="#" data-toggle="tab">Overall status</a></li>
+		  <li role="presentation" ><a href="#" data-toggle="tab">Over Milestone</a></li>
+		  <li role="presentation" ><a href="#" data-toggle="tab">Over Due/Age</a></li>
+		  <li role="presentation"  ><a href="#" data-toggle="tab">Severity 1N2</a></li>
+		  <li role="presentation"  ><a href="#" data-toggle="tab">test-blocking</a></li>
+		  <li role="presentation"  ><a href="#" data-toggle="tab">Limitation Candidate </a></li>
+		  <li role="presentation"  ><a href="#" data-toggle="tab">Limitation approved </a></li>
+		<h2>Site is not constantly available while under construct. Check it out.
+		<div id="test">Laest track at:</div>		
+        <p><a class="btn btn-primary btn-lg" id="refresh" href="#" role="button" >Loading &raquo;</a></p>
+	</h2><ul>
+	<!--
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='svg/overall.svg') }}" />
+	</figure>
+	
+	data-formatter="setLink"
+	  -->
+	
+
+      </div>
+  
+      <div class="container marketing">
+
+	<div class="col-sm-10 col-bg-11  tabble" id='tabs'>
+		{% if name == 'block' %}
+			<figure >
+				<embed type="image/svg+xml" src="{{ url_for('static', filename='svg/overall.svg') }}" />
+			</figure>
+			
+		<div class="row bs-wizard" style="border-bottom:0;">
+		<a  class="btn btn-primary btn-lg" href="{{ url_for('main.chart') }}">Functions Trend Details </a>	
+		</div>
+		{% endif %}
+		<div class="row bs-wizard" style="border-bottom:0;">
+		<h2>01. Overall status and Trend </h2>	
+		
+		<table  data-toolbar="#toolbar"  data-show-toggle="true" 	data-show-columns="true" data-show-export="true" data-show-pagination-switch="true" data-pagination="true" data-id-field="id" data-page-list="[10, 25, 50, 100, ALL]" data-show-footer="false" data-side-pagination="server"  
+	data-minimum-count-columns="23" data-id-field="id" data-page-list="[ 25, 50, 100, ALL]" data-show-footer="false" data-side-pagination="server"
+ class="table table-hover" id="pv_Statistics" width="65%" cellspacing="1"  cellpadding="2"  font-size = "6px" >
+    <thead font-size = "8px">
+    <tr>
+		<th data-field="Owner" nowrap="yes"  width="20px">Owner</th>
+		<th data-field="Function"   width="20px">Function</th>
+		<th data-field="All" nowrap="yes"  width="20px"   >All</th>
+		<th data-field="Closed" nowrap="yes"  width="10px" data-formatter="setLink">Closed</th>
+		<th data-field="Rejected" nowrap="yes"  width="10px" data-formatter="setLink">Rejected</th>
+		<th data-field="Verify" nowrap="yes"  width="10px" data-formatter="setLink">Verify</th>
+		<th data-field="Limitation" nowrap="yes"  width="10px" data-formatter="setLink" >Limitation</th>
+		<th data-field="Fixed" nowrap="yes"  width="10px" data-formatter="setLink">Fixed</th>
+		<th data-field="Open" nowrap="yes"  width="10px" data-formatter="setLink">Open</th>
+		<th data-field="Working" nowrap="yes"  width="10px" data-formatter="setLink">Working</th>
+		<th data-field="LmtCandidate" nowrap="yes"  width="10px" data-formatter="setLink">LmtCandidate</th>
+    </tr>
+    </thead>
+	<tbody  font-size = "7px" ></tbody>
+	</table>
+		</div>
+	
+	
+	<br>
+	<br>
+	</div>
+<div class="col-sm-10 col-bg-12  tabble" id='tabs'>	
+		{% if name == 'block' %}
+
+<div class="row bs-wizard" style="border-bottom:0;">
+		<h2>02.Over Milestone</h2>	
+	<h3>Milestone Defined </h3>
+<p>SDV  Phase<br>
+SDV 100%----8/4 <br>
+code frozen----8/18 <br>
+Filed  value = Severity + Status<br>
+<span>Status:<br>
+Meet1stCK: deadline less than  SDV 100% - 2 weeks <br>
+Meet2ndCK: deadline is  betwwen SDV 100% - 2 weeks  and  code frozen <br>
+Serv_1OverMS deadline is large than code frozen <br>
+NoDeadline: no deadline <br>
+</span>
+</p>
+	<div class = "table-responsive">
+		<table class = "table table-bordered" id="pv_Sev1N2MS">
+		<caption>Over Milestone for Severity 1 and 2</caption>
+		<thead>
+		<tr>
+			<th data-field="Owner">Owner</th>
+			<th data-field="Function">Function</th>
+			<th data-field="All">All</th>
+			<th data-field="Serv_1Meet1stCK">Sv1_1CK</th>
+			<th data-field="Serv_1Meet2ndCK">Sv1_2CK</th>
+			<th data-field="Serv_1OverMS">Sv1_MS</th>
+			<th data-field="Serv_1NoDeadline">Sv1_NoDate</th>
+			<th data-field="Serv_2Meet1stCK">Sv2_1CK</th>
+			<th data-field="Serv_2Meet2ndCK">Sv2_2CK</th>
+			<th data-field="Serv_2OverMS">Sv2_MS</th>
+			<th data-field="Serv_2NoDeadline">Sv2_NoDate</th>
+		</tr>
+		</thead>
+		</table>
+	</div>	
+
+</div>
+
+	
+	<br>
+	<br>
+	<br>
+		<table class="table table-bordered" id="pv_Sev3N4MS" width="65%" cellspacing="1"  cellpadding="2"  font-size = "10px">
+		<caption>Over Milestone for Severity 3 and 4</caption>
+    <thead>
+    <tr>
+		<th data-field="Owner" nowrap="yes"  width="6px" >Owner</th>
+		<th data-field="Function" nowrap="yes"  width="6px" >Function</th>
+		<th data-field="All"  nowrap="yes"  width="6px"	>All</th>		
+		<th data-field="Serv_3Meet1stCK">Sv3_1CK</th>
+		<th data-field="Serv_3Meet2ndCK"  nowrap="yes"  width="6px" >Sv3_2CK</th>
+		<th data-field="Serv_3OverMS" nowrap="yes"  width="6px">Sv3_MS</th>
+		<th data-field="Serv_3NoDeadline" nowrap="yes"  width="6px" >Sv3_NoDate</th>
+		<th data-field="Serv_4Meet1stCK"  nowrap="yes"  width="6px">Sv4_1CK</th>
+		<th data-field="Serv_4Meet2ndCK" nowrap="yes"  width="6px">Sv4_2CK</th>
+		<th data-field="Serv_4OverMS"  nowrap="yes"  width="6px" >Sv4_MS</th>
+		<th data-field="Serv_4NoDeadline" nowrap="yes"  width="6px">Sv4_NoDate</th>
+    </thead>
+	</table>
+	
+	<table class="table table-bordered" id="pv_OverAge" width="65%" cellspacing="1"  cellpadding="2"  font-size = "10px">
+	<caption>Over Age</caption>
+	<span>
+		03.Over Due: 	<br>
+		   Filled out the deadline (solution/build ready and self-verify) , but don’t change to “verify” and release build to bug submitter before/on deadline date. 	<br>
+		04.Over Age: 	<br>
+		 1/ “Open” not change to “working” over 3 days	<br>
+		 2/ Working status no change over 20 / 30 /50 days	<br>
+		headers:
+		Overdue	open over 3 days	Working over 20 days ( 20 -30 day)	Working over 30 days (30 days -50 days) 
+	</span>
+    <thead>
+    <tr>
+		<th data-field="Owner" nowrap="yes"  width="6px" >Owner</th>
+		<th data-field="Function" nowrap="yes"  width="6px" >Function</th>
+		<th data-field="All"  nowrap="yes"  width="6px"	>All</th>	
+		<th data-field="Overdue">Overdue</th>
+		<th data-field="3day_open">3day_open</th>
+		<th data-field="20d_work">20d_work</th>
+		<th data-field="30d_work">30d_work</th>
+		<th data-field="50d_work">50d_work</th>
+	</tr>
+	</thead>
+	</table>
+    
+	<br>
+	<br>
+	
+	<table class="table table-bordered" id="pv_TestBlocker" width="65%" cellspacing="1"  cellpadding="2"  font-size = "10px">
+		<caption>Blocking test Defects</caption>
+    <thead>
+    <tr>
+		<th data-field="Owner" nowrap="yes"  width="6px" >Owner</th>
+		<th data-field="Function" nowrap="yes"  width="6px" >Function</th>
+		<th data-field="All"  nowrap="yes"  width="6px"	>All</th>	
+		<th data-field="Blocking">Blocking</th>
+
+	</tr>
+	</thead>
+	</table>
+    
+	<br>
+	<br>
+	<br>
+	{% endif %}
+	{%   if name == 'purely'  %} 
+	<table class="table table-condensed" id="pv_HighLight">
+    <thead>
+    <tr>
+		<th data-field="Owner">Owner</th>
+		<th data-field="Function">Function</th>
+		<th data-field="All">All</th>
+		<th data-field="Translation">Translation</th>
+		<th data-field="inschedule">inschedule</th>
+		<th data-field="risky">risky</th>
+		<th data-field="Budding">Budding</th>
+		<th data-field="Pending">Pending</th>
+		<th data-field="OverMS">OverMS</th>
+
+    </tr>
+    </thead>
+	</table>
+	
+	<br>
+	<br>
+	<br>
+	
+{% endif %}
+
+
+
+{%   if name == 'hs'  %} 
+	<p>Project  HR630X/HR650X	</p>
+	
+		<table class="table table-condensed" id="pv_OutStanding">
+    <thead>
+    <tr>
+		<th data-field="Owner">Owner</th>
+		<th data-field="Function">Function</th>
+		<th data-field="All">All</th>
+		<th data-field="Serv_1Active" nowrap="yes"  width="5px" >Serv1 Active</th>
+		<th data-field="Serv_1Fixed">Serv_1Fixed</th>
+		<th data-field="Serv_1Verify">Serv_1Verify</th>
+		<th data-field="Serv_1Reject">Serv_1Reject</th>
+		<th data-field="Serv_2Active">Serv_2Active</th>
+		<th data-field="Serv_2Fixed">Serv_2Fixed</th>
+		<th data-field="Serv_2Verify">Serv_2Verify</th>
+		<th data-field="Serv_2Reject">Serv_2Reject</th>
+		<th data-field="Serv34_Active" nowrap="yes"  width="3px">Serv34 Active</th>
+		<th data-field="Serv34_Fixed">Serv34_Fixed</th>
+		<th data-field="Serv34_Verify">Serv34_Verify</th>
+		<th data-field="Serv34_Reject">Serv34_Reject</th>
+	</tr>
+    </thead>
+	</table>
+	<br>
+	<br>
+	
+		<table class="table table-condensed" id="pv_General">
+    <thead>
+    <tr>
+		<th data-field="Owner">Owner</th>
+		<th data-field="Function">Function</th>
+		<th data-field="All">All</th>
+		<th data-field="LimApv">LimApv</th>
+		<th data-field="Limcandi">Limcandi</th>
+		<th data-field="Limdup">Limdup</th>
+		<th data-field="Lev1">Lev1</th>
+		<th data-field="Lev3">Lev3</th>
+		<th data-field="Lev4">Lev4</th>
+		<th data-field="Lev6">Lev6</th>
+		<th data-field="Lev5et">Others</th>
+		<th data-field="duedAt5">duedOthers</th>
+		<th data-field="duedAt6dl">Lev6nodate</th>
+		<th data-field="duedAt6">duedAt6</th>
+		<th data-field="dueFixed">dueFixed</th>
+		<th data-field="dueFixnodl">dueFixnodl</th>
+		<th data-field="overMS">overMS</th>
+	</tr>
+    </thead>
+	</table>
+	
+	<br>
+	<br>
+{% endif %}	
+		
+</div>
+    <div class="col-sm-9 tabble">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Sources</h2>   
+		   <li id="sourcelist" >
+		   <a>Source</a>
+		   
+		   </li>
+		<p><a class="btn btn-default" href="#" role="button">Nil &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Summarys</h2>
+          <p>so... </p>
+          <p><a class="btn btn-default" href="#" role="button">Nil &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Chart</h2>
+          <p>stacked chart..</p>
+          <p><a class="btn btn-default" href="#" role="button">Nil &raquo;</a></p>
+        </div>
+      </div>
+		
+	</div>
+	
+	  </div>
+  
+{% endblock  %}

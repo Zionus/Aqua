@@ -1,0 +1,31 @@
+Server,Client
+id,Bug ID
+status,Status
+cf_risk_level,Risk Level
+product,Product
+platform,Hardware
+cf_limitation_status,Limitation Status
+creation_time,Opened
+deadline,Deadline
+version,Release
+cf_platform_affected,Platform Affected
+cf_phase_found,Phase Found
+component,Component
+cf_tip_pointer,Tip Pointer
+cf_tip_status,Tip Status
+severity,Severity
+cf_blocking_defect,Defect is Blocking
+cf_cq_uuid,External ID
+resolution,Resolution
+last_change_time,Changed
+cf_build_fixed,Build Fixed
+classification,Classification
+dupe_of,Duplicate ID
+cf_target_release,Target Release
+cf_customer_impact,Customer Impact
+cf_probability,Probability
+summary,Summary
+cf_answer,Answer
+priority,Priority
+keywords,keywords
+whiteboard,Action

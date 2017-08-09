@@ -1,0 +1,27 @@
+Owner,Function,Component
+Allen Wang,EE,BP
+James Zhou,EE,Driver /VBIOS
+Allen Wang,EE,ECAT Power
+Allen Wang,EE,FP
+Allen Wang,EE,M.2 MODULE
+Allen Wang,EE,TCM/TPM
+Allen Wang,Power,PSU
+DB,BIOS,BIOS
+DB,BMC,BMC
+James Zhou,ME/S&V,ME
+James Zhou,ME/S&V,Package
+James Zhou,ME/S&V,Shock&Vibration
+James Zhou,Thermal,Thermal
+KK,IO,CPU
+KK,IO,GPU
+KK,IO,HBA
+KK,IO,HDD
+KK,IO,Memory
+KK,IO,NIC
+KK,IO,NVMDIMM
+KK,IO,ODD
+KK,IO,RAID
+KK,IO,SSD
+KK,IO,Switch
+Austvold,OS,OS/Driver
+HH,SW,Tools/Utility

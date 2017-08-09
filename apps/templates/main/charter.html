@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block diff %}	
+			
+<p>Chart Overview</p>
+
+	<div id="page-wrapper" class="col-sm-1" style="margin-left:10px; margin-top: 5px; width:1100px;">                
+    <figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='svg/overall.svg') }}" />
+	</figure>            
+                
+        
+
+</div>
+ <div class="row">
+ 
+          <h2>Sources</h2>   
+
+		   <a  href="static/svg/repoz.csv">Source</a>
+</div>
+<p>For Functions</p>
+<br>
+
+
+
+	<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_IO.svg') }}" />
+	</figure> 
+	</div>
+	
+	<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_BDCME.svg') }}" />
+	</figure> 
+	</div>
+	
+	
+	<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_BDCHW.svg') }}" />
+	</figure> 
+	</div>
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_BDCPlatform.svg') }}" />
+	</figure> 
+	</div>
+	
+	<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_BDCSW.svg') }}" />
+	</figure> 
+	</div>
+	
+<!--
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_BDCThermal.svg') }}" />
+	</figure> 
+	</div>
+-->
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_CMMAMM.svg') }}" />
+	</figure> 
+	</div>
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_OS.svg') }}" />
+	</figure> 
+	</div>
+	
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_sCntr.svg') }}" />
+	</figure> 
+	</div>
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_TDCPlatform.svg') }}" />
+	</figure> 
+	</div>
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_ThinkBIOS.svg') }}" />
+	</figure> 
+	</div>
+	
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_ThinkBMC.svg') }}" />
+	</figure> 
+	</div>
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_ToolsCenter.svg') }}" />
+	</figure> 
+	</div>
+	
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_Xclarity.svg') }}" />
+	</figure> 
+	</div>
+	
+		<div class= "col-xs-6 col-lg-4">
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='downloads/block/functions/suf_xFW.svg') }}" />
+	</figure> 
+	</div>	
+
+	
+
+{% endblock %}
+<script>
+
+
+</script>

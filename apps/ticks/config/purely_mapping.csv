@@ -1,0 +1,86 @@
+Owner,Function,Component
+Allen Wang,EE,chipset_device_driver
+James Zhou,ME/SV,Purley_MS_EMC_ESD
+Allen Wang,EE,cmm_i2c_mux_fpga
+Allen Wang,EE,ThinkServer_fpga
+DB,IMM,imm3.platform.cable.hv
+DB,IMM,imm3.platform.Constantine.hv
+DB,IMM,imm3.platform.cyborg.hv
+DB,IMM,imm3.platform.odin.hv
+DB,IMM,imm3.platform.carnage.hv
+Allen Wang,EE,internal_cables
+James Zhou,ME/SV,0.kvm.screen
+James Zhou,ME/SV,Rack_Rail
+James Zhou,ME/SV,Mechanical_Constantine
+James Zhou,ME/SV,Mechanical_cyborg
+James Zhou,ME/SV,Mechanical_cable
+James Zhou,ME/SV,HDD_tray
+James Zhou,ME/SV,labels
+James Zhou,ME/SV,Packaging_1U
+James Zhou,ME/SV,Packaging_2U
+Allen Wang,EE,HDD_BP
+Allen Wang,EE,Mainboard
+Allen Wang,EE,RiserCard
+Terry,SL,specification.hv.system
+James Zhou,ME/SV,SV_cyborg
+James Zhou,ME/SV,SV_cable
+Allen Wang,PSU(DC/DC),PSU_CFF3
+Allen Wang,EE,0.systemxhw.screen
+James Zhou,THERMAL,Thermal_cable
+James Zhou,THERMAL,Thermal
+James Zhou,THERMAL,HeatSink
+James Zhou,THERMAL,Thermal_cyborg
+Allen Wang,EE,TCM
+Allen Wang,EE,TPM2.0
+DB,UEFI,uefi4.odin.compal.hv
+DB,IMM,imm3.odin.compal.hv
+DB,UEFI,uefi4.cable.inventec.hv
+DB,IMM,imm3.cable.inventec.hv
+DB,UEFI,uefi4.cyborg.inventec.hv
+DB,IMM,imm3.cyborg.inventec.hv
+Allen Wang,EE,Cable_IEC_HW
+Allen Wang,EE,Cyborg_IEC_HW
+Allen Wang,EE,Carnage_Wistron_HW
+DB,UEFI,uefi4.constantine.Wistron.hv
+DB,UEFI,uefi4.carnage.Wistron.hv
+James Zhou,THERMAL,Acoustic
+Allen Wang,EE,Carnage_Wistron_HW
+Allen Wang,EE,chipset_device_driver
+Allen Wang,EE,Constantine_Wistron_HW
+Allen Wang,EE,CPU
+Allen Wang,PSU(DC/DC),ECAT Power
+James Zhou,THERMAL,HeatSink
+DB,IMM,imm3.carnage.wistron.hv
+DB,IMM,imm3.constantine.wistron.hv
+DB,IMM,imm3.platform.carnage.hv
+DB,IMM,imm3.platform.Constantine.hv
+Allen Wang,EE,internal_cables
+James Zhou,ME/SV,labels
+Allen Wang,EE,Mainboard
+James Zhou,ME/SV,Mechanical_Carnage
+James Zhou,ME/SV,Mechanical_Constantine
+Allen Wang,PSU(DC/DC),PSU.hv
+Allen Wang,PSU(DC/DC),PSU_CFF3
+Allen Wang,PSU(DC/DC),PSU_ITE
+James Zhou,ME/SV,Rack_Rail
+James Zhou,ME/SV,SV_Carnage
+James Zhou,ME/SV,SV_Constantine
+Allen Wang,EE,TCM
+James Zhou,THERMAL,Thermal
+James Zhou,THERMAL,Thermal_Carnage
+James Zhou,THERMAL,Thermal_Constantine
+DB,UEFI,uefi4.carnage.Wistron.hv
+DB,UEFI,uefi4.constantine.Wistron.hv
+Allen Wang,EE,chipset_device_driver
+Allen Wang,EE,cmm_i2c_mux_fpga
+DB,IMM,imm3.odin.compal.hv
+DB,IMM,imm3.platform.odin.hv
+James Zhou,ME/SV,Mechanical_Odin
+Allen Wang,EE,Odin_Compal_HW
+Allen Wang,PSU(DC/DC),PSU.hv
+Allen Wang,PSU(DC/DC),PSU_CFF3
+James Zhou,ME/SV,SV_Odin
+Allen Wang,EE,TCM
+Allen Wang,EE,ThinkServer_fpga
+DB,UEFI,uefi4.odin.compal.hv
+James Zhou,THERMAL,Thermal_Odin

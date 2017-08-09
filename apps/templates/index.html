@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<!--
+	<link rel="stylesheet" href="{{ url_for('static', filename='/svg/overall.svg') }}" >  
+    -->
+	<div class="jumbotron">
+
+       <div class="col-sm-2 tabble">
+		<h1>Project purely</h1>
+        <p>Stage...</p>	
+        <p><a class="btn btn-primary btn-lg" id="project" href="{{ url_for('main.project', name='purely') }}" role="button" >More &raquo;</a></p>
+        </div>
+		
+		<div class="col-sm-2 tabble">
+		<h1>Project block</h1>
+        <p>Stage...</p>	
+        <p><a class="btn btn-primary btn-lg" id="project" href="{{ url_for('main.project', name='block') }}" role="button" >More &raquo;</a></p>
+    </div>		
+		<div class="col-sm-2 tabble">
+		<h1>Project HyperScale</h1>
+        <p>Stage...</p>	
+        <p><a class="btn btn-primary btn-lg" id="project" href="{{ url_for('main.project', name='hs') }}" role="button" >More &raquo;</a></p>
+    </div>	
+	<!--
+	
+	<figure >
+		<embed type="image/svg+xml" src="{{ url_for('static', filename='svg/overall.svg') }}" />
+	</figure>
+	-->
+      </div>
+    <
+
+
+
+
+      <hr>
+	
+{% endblock  %}

@@ -1,0 +1,3 @@
+NAME,RELEASES_DICT,comps,HW_LIST,CATCH,LABELS
+block,{'17B': ['17B_Block']  },FALSE,None,"['Closed','Limitation']","['Milestones!','Statistics']"
+purely,"{'Purely' : ['Purley_MS','Purley_Odin','Purley_Value'], 'purely_OOD':['Purley_Electron','purley_ga','Purley_Neutron','Purley_Proton','Purley_Stark','Purley_Stark_ESP']}",TRUE,"['Purley SR530','Purley SR630','Purley SR550','Purley SR650','Purley ST550']",None,"['Highlight','Statistics']"
